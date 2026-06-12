@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Step Signup</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7fc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        fieldset {
+            width: 100%;
+            max-width: 500px;
+            background: #fff;
+            padding: 35px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 0 10px;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #34495e;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #dcdde1;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn-container img {
+            width: 130px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-container img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 600px) {
+            fieldset {
+                padding: 25px;
+            }
+
+            legend {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <form method="get">
+            <label for="name">First Name:</label>
+            <input id="name" placeholder="Enter your First Name..." type="text" required minlength="2" maxlength="100"
+                name="FirstName"><br><br>
+
+            <label for="name">Last Name:</label>
+            <input id="name" placeholder="Enter your Last Name..." type="text" required minlength="2" maxlength="100"
+                name="LastName"><br><br>
+
+            <label for="cnic">CNIC:</label>
+            <input id="cnic" placeholder="Enter your CNIC..." type="number" required minlength="13" maxlength="13"
+                name="CNIC"><br><br>
+
+            <label for="Social Link">Social Link:</label>
+            <input type="text" id="Social Link" placeholder="Enter your Social Link..." name="SocialLink"><br><br>
+
+
+            <div class="btn-container">
+                     <a href="signup.html">
+                        <img src="./images/back.png" alt="Back Button">
+                    </a>
+                    <a href="signup3.html">
+                        <img src="./images/next.png" alt="Next Button">
+                    </a>
+            </div>
+
+        </form>
+    </fieldset>
+</body>
+
+</html>
